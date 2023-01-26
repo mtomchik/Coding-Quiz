@@ -71,13 +71,14 @@ function render(questionIndex) {
         var userQuestion = myQuestions[questionIndex].question;
         var userChoices = myQuestions[questionIndex].answers;
         questionsDiv.textContent = userQuestion;
+        ulCreate.textContent = userChoices
     }
     console.log(userChoices)
     
     Array.from(userChoices).forEach( function (newItem) {
         var listItem = document.createElement("li");
         listItem.textContent = newItem;
-        questionsDiv.appendChild(ulCreate);
+        questionsDiv.appendChild(listItem);
         ulCreate.appendChild(listItem);
         listItem.addEventListener("click", (compare));
     })
