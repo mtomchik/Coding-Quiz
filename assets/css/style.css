@@ -1,0 +1,166 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: hsl(var(--hue), 100%, 20%);
+}
+
+.time {
+    background-color: white;
+    width: 100px;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 0 5px 2px black;
+    color: black;
+}
+
+.container {
+    background-color: #998a08;
+    padding: 8rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+}
+
+.container h1 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.container p {
+    text-align: center;
+}
+
+#question-container {
+    max-width: 100%;
+    width: 900x;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px black;
+}
+
+#question {
+    max-width: 100%;
+    width: 900x;
+    background-color: white;
+    padding: 10px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.begin-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center
+
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    grid-column: span 1.5;
+    background-color: purple;
+    color: white;
+    border: 2px solid black;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+}
+
+.btn:hover {
+    background-color:black;
+}
+
+.btn.correct {
+    background-color: green;
+}
+
+.btn.wrong {
+    background-color: red;
+}
+
+
+#begin-quiz {
+    grid-column: span 2;
+    background-color: purple;
+    border: 2px solid black;
+    color: white;
+    padding: .5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+#begin-quiz:hover {
+    background-color:black;
+}
+
+#hs-container {
+    max-width: 100%;
+    width: 900x;
+    background-color: purple;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#hs-message {
+    max-width: 100%;
+    width: 900x;
+    background-color: purple;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#high-score-chart {
+    max-width: 100%;
+    width: 900x;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px black;
+    color: black;
+}
+
+#high-score-chart h2 {
+    grid-column: span 2;
+    background-color: purple;
+    border: 2px solid black;
+    color: white;
+    padding: .5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+#high-score-input {
+    grid-column: span 2;
+    background-color: purple;
+    border: 2px solid black;
+    color: white;
+    padding: .5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.hide {
+    display: none;
+}
